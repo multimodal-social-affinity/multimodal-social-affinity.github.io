@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 页面标题及元数据 -->
+    <title> Social Affinity in Social Media:
+            Predictive AI and Generative AI</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 外部样式表 -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- 脚本引入 -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- 内部样式，用于导航栏与响应式设计 -->
+    <style>
+        /* 导航栏样式 */
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 60px;
+            padding-left: 0;
+            list-style: none;
+            width: 100%;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 0.5rem 3rem;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .nav-link:hover {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        /* 响应式设计 */
+        @media screen and (max-width: 768px) {
+            .large-title p:nth-child(1) {
+                font-size: 26px !important;
+            }
+
+            .large-title p:nth-child(2) {
+                font-size: 20px !important;
+            }
+
+            .mobile {
+                flex-direction: column;
+            }
+
+            .uk-width-1-2 {
+                width: 100% !important;
+            }
+
+            .container {
+                margin: 0 !important;
+            }
+        }
+    </style>
+
+    <!-- 视频及布局样式 -->
+    <style>
+        /* 视频内容布局样式 */
+        .col2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .small-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        /* 响应式视频布局 */
+        @media screen and (max-width: 768px) {
+            .col2 {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body oncontextmenu="self.event.returnValue=false">
+    <!-- 导航栏 -->
+    <nav class="uk-navbar-container uk-margin" uk-navbar uk-sticky></nav>
+
+    <!-- 主要内容区域 -->
+    <div class="banner" style="background-color:#f5f5f5; padding-bottom:26px">
+        <div class="uk-container uk-container-center container">
+
+            <!-- 标题部分 -->
+            <div class="large-title">
+                <p style="font-size: 48px; text-align: center;">Social Affinity in Social Media: </p>
+                <p style="margin: 0; text-align: center; font-size: 40px;">Predictive AI and Generative AI</p>
+            </div>
+
+            <!-- 视频展示部分 -->
+            <div class="large-title">
+                <p style="text-align: left; font-weight: 100; margin-top: 160px; font-size: 24px;">The 8 video stimuli in our field experiment are shown as follows:</p>
+            </div>
+
+            <!-- 视频 1 -->
+            <h5 id="1" class="title">
+                <p style="font-size: 20px;"><strong>Video 1: </strong></p>
+                    <div class="item" style="padding-left: 12ch;"><span>Text similarity to social affinity: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Positive emotion: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Smile: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Eye gaze: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Lean forward: </span>high</div>
+
+            </h5>
+
+            <div class="col2">
+                <!-- 英文版 -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N-VLLjgcTHM?rel=0&si=P1U4dQW9mqaVadsG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="small-title">(English version)</div>
+                </div>
+
+                <!-- 中文版 -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bD3vl6rBBGA?rel=0&si=4veYmHuB4wlXu8Qj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="small-title">(Chinese version)</div>
+                </div>
+            </div>
+
+            <!-- 视频 2 -->
+            <h5 id="2" class="title">
+                <p style="font-size: 20px;"><strong>Video 2: </strong></p>
+                  <div class="item" style="padding-left: 12ch;"><span>Text similarity to social affinity: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Positive emotion: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Smile: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Eye gaze: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Lean forward: </span>low</div>
+
+            </h5>
+
+            <div class="col2">
+                <!-- 英文版 -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rA7jn1Tff60?rel=0&si=DOagU0T9I1_9_zwF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="small-title">(English version)</div>
+                </div>
+
+                <!-- 中文版 -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Uy-Ml7GDvBM?rel=0&si=rF5moLPIdCDsAdon" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="small-title">(Chinese version)</div>
+                </div>
+            </div>
+
+            <!-- 视频 3 -->
+            <h5 id="3" class="title">
+                <p style="font-size: 20px;"><strong>Video 3: </strong></p>
+                     <div class="item" style="padding-left: 12ch;"><span>Text similarity to social affinity: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Positive emotion: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Smile: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Eye gaze: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Lean forward: </span>high</div>
+            </h5>
+
+            <div class="col2">
+                <!-- 英文版 -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5OnK6C3og3U?rel=0&si=ukg4CzVmhewQ4B34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="small-title">(English version)</div>
+                </div>
+
+                <!-- 中文版 -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gPDp1RhsrWk?rel=0&si=8p8EDRxZUFv2GsLn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="small-title">(Chinese version)</div>
+                </div>
+            </div>
+
+            <!-- 视频 4 -->
+            <h5 id="4" class="title">
+                <p style="font-size: 20px;"><strong>Video 4: </strong></p>
+                    <div class="item" style="padding-left: 12ch;"><span>Text similarity to social affinity: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Positive emotion: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Smile: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Eye gaze: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Lean forward: </span>low</div>
+            </h5>
+
+            <div class="col2">
+                <!-- 英文版 -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5Drq2hlJi_s?rel=0&si=3LLPDcG5WRkIhDxR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="small-title">(English version)</div>
+                </div>
+
+                <!-- 中文版 -->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Denx5jEqYNY?rel=0&si=ELo04Fs8q69ZcwsX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="small-title">(Chinese version)</div>
+                </div>
+            </div>
+
+            <!-- 视频 5 -->
+            <h5 id="5" class="title">
+                <p style="font-size: 20px;"><strong>Video 5: </strong></p>
+                    <div class="item" style="padding-left: 12ch;"><span>Text similarity to social affinity: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Positive emotion: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Smile: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Eye gaze: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Lean forward: </span>low</div>
+            </h5>
+
+            <div class="col2">
+                <!-- 英文版 -->
+                <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5RuXh6Eb3B8?rel=0&si=k-Cu1Z9eVJnKPc3O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    <div class="small-title">(English version)</div>
+                </div>
+
+                <!-- 中文版 -->
+                <div class="video">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/etBS1ojoXDw?rel=0&si=0tYtAPZTzq6X5Bdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    <div class="small-title">(Chinese version)</div>
+                </div>
+            </div>
+
+            <!-- 视频 6 -->
+            <h5 id="6" class="title">
+                <p style="font-size: 20px;"><strong>Video 6: </strong></p>
+                    <div class="item" style="padding-left: 12ch;"><span>Text similarity to social affinity: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Positive emotion: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Smile: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Eye gaze: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Lean forward: </span>high</div>
+            </h5>
+
+            <div class="col2">
+                <!-- 英文版 -->
+                <div class="video">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/AvLuD0ekpwM?rel=0&si=lV63ptNnFO9UXfmL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="small-title">(English version)</div>
+                </div>
+
+                <!-- 中文版 -->
+                <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/TqNWgFGx7AU?rel=0&si=Ql1Fu8N6QN6wYKir" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    <div class="small-title">(Chinese version)</div>
+                </div>
+            </div>
+
+            <!-- 视频 7 -->
+            <h5 id="7" class="title">
+                <p style="font-size: 20px;"><strong>Video 7: </strong></p>
+                    <div class="item" style="padding-left: 12ch;"><span>Text similarity to social affinity: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Positive emotion: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Smile: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Eye gaze: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Lean forward: </span>low</div>
+            </h5>
+
+            <div class="col2">
+                <!-- 英文版 -->
+                <div class="video">
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9-8qjFg2Tp4?rel=0&si=5SedWlulbKJr2Fvd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    <div class="small-title">(English version)</div>
+                </div>
+
+                <!-- 中文版 -->
+                <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/pWIeisW-1Jk?rel=0&si=hA-PYxSr7i1ldNbt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    <div class="small-title">(Chinese version)</div>
+                </div>
+            </div>
+
+
+            <!-- 视频 8 -->
+            <h5 id="8" class="title">
+                <p style="font-size: 20px;"><strong>Video 8:</strong></p>
+                  <div class="item" style="padding-left: 12ch;"><span>Text similarity to social affinity: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Positive emotion: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Smile: </span>high</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Eye gaze: </span>low</div>
+                    <div class="item" style="padding-left: 12ch;"><span>Lean forward: </span>high</div>
+
+            </h5>
+
+            <div class="col2">
+                <!-- 英文版 -->
+                <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yqxI8yF67O4?rel=0&si=9uQDCAFR82HjEBmm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="small-title">(English version)</div>
+                </div>
+
+                <!-- 中文版 -->
+                <div class="video">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/410lUVBePCk?rel=0&si=n3HYyWuIO68tFv_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    <div class="small-title">(Chinese version)</div>
+                </div>
+            </div>
+
+            <!-- 返回顶部按钮 -->
+            <a href="" uk-totop class="totop" uk-scroll><span uk-icon="top"></span></a>
+        </div>
+    </div>
+</body>
+</html>
